@@ -91,3 +91,10 @@ branch docs/contribuicao  -->  Pull Request  -->  merge na main
 ## Observação
 
 Desafio bem direto (e um pouco tosco mesmo), mas cobre o que importa no mercado: versionar, colaborar e documentar.
+
+## Nota do colaborador
+
+Contribuicao feita pela conta `vincency3-sys` neste desafio de colaboracao da DIO: branch, commit e pull request.
+
+Issue relacionada: #1
+
