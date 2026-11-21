@@ -1,100 +1,73 @@
-# Desafio GitHub Markdown
+# Desafio GitHub + Markdown
 
-Lab da DIO: **Explorando Colaboração e Markdown**.
+Lab da DIO pra treinar colaboração. Eu usei o tema do **Shardspire** (jogo que eu tô construindo) e um pouco de **Dota 2**, porque versionar sozinho é fácil — o negócio é não bagunçar o trampo quando outra pessoa entra.
 
-Repo público para praticar Git/GitHub de verdade — README formatado, colaborador, issue, commits em duas contas e pull request.
+## Por que esse tema
 
-## Objetivo
+No Dota, se o mid some do mapa e ninguém fala, o time implode. No Git é a mesma coisa: branch sem aviso, commit genérico, PR sem contexto.
 
-Montar um repositório que mostre o básico do fluxo profissional:
+O Shardspire ainda tá no começo (trailer, combate, mundo). Antes de crescer o código, eu quis deixar claro o fluxo: quem mexe, o que muda, e como isso chega na `main` sem apagar o trabalho do outro.
 
-1. Conta no GitHub  
-2. Repositório público com `README.md`  
-3. Colaboração (segunda conta ou colega)  
-4. Formatação com Markdown  
+## O que eu fiz aqui
 
-## Contas usadas
+- [x] Repo público  
+- [x] README em Markdown de verdade (não só um título)  
+- [x] Segunda conta como colaboradora: [`vincency3-sys`](https://github.com/vincency3-sys)  
+- [x] Issue aberta  
+- [x] Branch + pull request + merge  
 
-| Papel | Conta |
+Dono do repo: [`sir-devtech`](https://github.com/sir-devtech)
+
+## Como eu penso a “partida”
+
+| Momento no Dota | Equivalente no Git |
 | --- | --- |
-| Dono do repo | [`sir-devtech`](https://github.com/sir-devtech) |
-| Colaborador | [`vincency3-sys`](https://github.com/vincency3-sys) |
+| Draft / pick | Abrir issue e alinhar o que vai entrar |
+| Farm na lane | Commit pequeno e com mensagem clara |
+| Smoke / gank | Abrir PR pra review antes de mergear |
+| Throne | `main` estável, pronto pra build |
 
-## Passo a passo que eu executei
+Não é tutorial oficial. É o jeito que faz sentido pra mim.
 
-1. Criei o repositório público `desafio-github-markdown`  
-2. Escrevi este README com Markdown (títulos, tabelas, listas, código, links)  
-3. Convidei `vincency3-sys` como colaborador  
-4. Abri uma issue descrevendo a melhoria  
-5. A segunda conta criou uma branch, fez commit e abriu um pull request  
-6. Mergeei o PR na `main`  
-
-## Como clonar
+## Clonar
 
 ```bash
 git clone https://github.com/sir-devtech/desafio-github-markdown.git
 cd desafio-github-markdown
 ```
 
-## Exemplos de Markdown usados aqui
-
-### Lista de tarefas
-
-- [x] Repo público  
-- [x] README formatado  
-- [x] Colaborador adicionado  
-- [x] Issue aberta  
-- [x] Pull request mergeado  
-
-### Código inline e bloco
-
-Comando útil: `git status`
-
-```bash
-git checkout -b docs/contribuicao
-git add .
-git commit -m "docs: contribui no README como colaborador"
-git push -u origin HEAD
-```
-
-### Citação
-
-> “Se o expert forneceu um repositório, você pode dar um fork… ou adicionar um colaborador (pode ser você mesmo com outra conta).” — orientação da DIO
-
-### Tabela rápida de comandos
-
-| Comando | Para quê |
-| --- | --- |
-| `git clone` | Baixar o repo |
-| `git checkout -b` | Criar branch |
-| `git commit` | Registrar mudança |
-| `gh pr create` | Abrir pull request |
-
-## Colaboração
-
-Fluxo deste desafio:
+## Fluxo que rodei
 
 ```text
-sir-devtech (main)
+sir-devtech cria o repo e o README
         |
         | convida vincency3-sys
         v
-branch docs/contribuicao  -->  Pull Request  -->  merge na main
+issue #1  ->  branch docs/contribuicao  ->  PR #2  ->  merge
 ```
 
-## Links
+Comandos que eu usei de verdade:
 
-- Repo: https://github.com/sir-devtech/desafio-github-markdown  
-- Dono: https://github.com/sir-devtech  
-- Colaborador: https://github.com/vincency3-sys  
-
-## Observação
-
-Desafio bem direto (e um pouco tosco mesmo), mas cobre o que importa no mercado: versionar, colaborar e documentar.
+```bash
+git checkout -b docs/contribuicao
+git add README.md
+git commit -m "docs: nota do colaborador"
+git push -u origin HEAD
+```
 
 ## Nota do colaborador
 
-Contribuicao feita pela conta `vincency3-sys` neste desafio de colaboracao da DIO: branch, commit e pull request.
+Ajuste feito pela conta `vincency3-sys`: entrou na issue, mexeu no README e mandou o PR.  
+Issue: #1 · PR: #2
 
-Issue relacionada: #1
+## Shardspire (contexto rápido)
 
+Projeto próprio. Ainda não é o repo do jogo — este aqui é só o exercício de Git/Markdown da DIO, escrito do meu jeito, pra não entregar mais um README de checklist robótico.
+
+> Time que não comunica perde. Código sem PR também.
+
+## Links
+
+- Este repo: https://github.com/sir-devtech/desafio-github-markdown  
+- Conta principal: https://github.com/sir-devtech  
+- Conta colaboradora: https://github.com/vincency3-sys  
